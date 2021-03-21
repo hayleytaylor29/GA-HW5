@@ -4,9 +4,11 @@
 //     console.log('I did it! I linked jQuery to this js file!');
 // }
 $(() => {
+    
     const addContainer = () => {
-    const $container = $('#container').append($container);
-    console.log($container);
+        const $container = '';
+        $('#container').append($container);
+        console.log($container);
     }
 
     const addH1 = () => {
@@ -14,6 +16,7 @@ $(() => {
         $('#container').append($h1);
         console.log($h1);
     }
-        addH1();
+    addContainer();    
+    addH1();
     
 });
