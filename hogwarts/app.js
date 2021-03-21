@@ -34,11 +34,24 @@ $(() => {
         $('#container').append($h4);
         console.log($h4);
     }   
+    const addList = () => {
+        const $trunk = $('<ul class="list">').attr('storage', 'trunk');
+        $('#container').append($trunk);
+        $trunk.append('<li>butter beer</li>', 
+        '<li class="secret">invisibility cloak</li>',
+        '<li class="secret">magic map</li>',
+        '<li class="secret">time turner</li>',
+        '<li class="cat">leash</li>',
+        "<li>Bertie Bott's Every Flavor [Jelly] Beans</li>"
+        );
+    }
     
+
+
     addH1();
     addH2();
     addH3();
     addH4();
     addH41();
-
+    addList();
 });
