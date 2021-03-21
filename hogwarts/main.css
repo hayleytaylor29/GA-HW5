@@ -2,3 +2,7 @@ body {
     background-color: rgb(16, 62, 88);
     text-align: center;
 }
+
+.cat {
+    font-family: fantasy;
+}
