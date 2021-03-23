@@ -30,10 +30,16 @@ $(() => {
     }
     
     const addH41 = () => {
-        const $h4 = $('<h4>').text('Holly Wand with Unicorn Hair Core');
+        const $h4 = $('<h4 class="wand">').text('Holly Wand with Unicorn Hair Core');
         $('#container').append($h4);
         console.log($h4);
     }   
+    const addH42 = () => {
+        const $h4 = $('<h4 class="wand1">').css('color', '#92e8c4').text('Hawthorn Wand with Dragon Heartstring Core');
+        $('#container').append($h4);
+        console.log($h4);
+        }
+
     const addList = () => {
         const $trunk = $('<ul class="list">').attr('storage', 'trunk');
         $('#container').append($trunk);
@@ -87,13 +93,21 @@ $(() => {
         $td5.append($td6);
         console.log($table);
     }
+    const remove = () => {
+    $('.wand').remove();
+    $('li').remove(':contains("butter beer")');
+    }
+   
 
     addH1();
     addH2();
     addH3();
     addH4();
     addH41();
+    addH42();
     addList();
     addH5();
     addTable();
+    remove();
+    
 });
