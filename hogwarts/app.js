@@ -53,7 +53,7 @@ $(() => {
     }
     
     const addH5 = () => {
-        const $h5 = $('<h5>').text('Spring 2017');
+        const $h5 = $('<h5 class="semester">').text('Spring 2017');
         $('#container').append($h5);
         console.log($h5);
     }
@@ -115,6 +115,21 @@ $(() => {
     $('li.cat').removeClass('cabbage');
     }
 
+    const fall = () => {
+        $('.semester').text('Fall 2018');
+    }
+
+    const beer = () => {
+        const $beer = $('<li>').text('butter beer');
+        $('#container')(':contains("invisibility cloak")').prepend($beer);
+    }
+
+    const trunk = () => {
+        $('.list').prop('trunk','chest');
+    }
+
+
+
     addH1();
     addH2();
     addH3();
@@ -128,4 +143,7 @@ $(() => {
     effect();
     leash();
     removeCab();
+    fall();
+    beer();
+    trunk();
 });
