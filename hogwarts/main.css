@@ -21,3 +21,7 @@ body {
     border-width: 1px;
     margin: 0 auto;
 }
+
+.cabbage {
+    color: chartreuse;
+}

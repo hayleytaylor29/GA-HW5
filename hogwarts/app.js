@@ -97,7 +97,23 @@ $(() => {
     $('.wand').remove();
     $('li').remove(':contains("butter beer")');
     }
+    //not sure what is meant by remove your pet from the DOM for the last part
+    //of 'year 5'
+    const effect = () => {
+        $('.list').delay(2000).hide('slow');
+        //I think the .secret isn't working because I'm calling the whole list
+        //that has the class of .list above, and .secret is apart of that, but
+        //not sure how to separate the 2
+        $('.secret').show('slow');
+    }
    
+    const leash = () => {
+        $('li.cat').addClass('cabbage');
+    }
+
+    const removeCab = () => {
+    $('li.cat').removeClass('cabbage');
+    }
 
     addH1();
     addH2();
@@ -109,5 +125,7 @@ $(() => {
     addH5();
     addTable();
     remove();
-    
+    effect();
+    leash();
+    removeCab();
 });
